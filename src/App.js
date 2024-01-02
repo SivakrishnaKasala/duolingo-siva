@@ -13,6 +13,7 @@ import SelectTest from "./views/checkout/SelectTest/SelectTest";
 import TestAmount from "./views/checkout/TestAmount/TestAmount";
 import { FastResult } from "./views/checkout/TestAmount/FastResult";
 import DeliveryTest from "./views/checkout/DeliveryTest/DeliveryTest";
+import Settings from "./views/settings/Settings";
 
 const theme = createTheme({
   breakpoints: {
@@ -53,6 +54,7 @@ const App = () => {
             <Route exact path="/auth/register" element={<Register />} />
             <Route exact path="/duolingo/home" element={<Duolingo />} />
             <Route exact path="/duolingo/applicants" element={<Applicant />} />
+            <Route exact path="/duolingo/settings" element={<Settings />} />
             <Route
               exact
               path="/duolingo/test_takers/accepting_institution"

@@ -13,12 +13,15 @@ import SlideshowOutlinedIcon from "@mui/icons-material/SlideshowOutlined";
 import MapsHomeWorkOutlinedIcon from "@mui/icons-material/MapsHomeWorkOutlined";
 import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
 import Faq from "./views/admin/Faq/Faq";
+import UniversitiesFav from "./views/univserities/UniversitiesFav";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import SelectTest from "./views/checkout/SelectTest/SelectTest";
 
 const routes = [
   {
     path: "/home",
     name: "Home",
-    icon: <HomeOutlinedIcon />,
+    icon: HomeOutlinedIcon,
     iconColor: "Error",
     component: Home,
     layout: "/duolingo",
@@ -27,7 +30,7 @@ const routes = [
   {
     path: "/prepare",
     name: "Prepare",
-    icon: <AppRegistrationOutlinedIcon />,
+    icon: AppRegistrationOutlinedIcon,
     iconColor: "Error",
     component: Prepare,
     layout: "/duolingo",
@@ -36,7 +39,7 @@ const routes = [
   {
     path: "/practice-test",
     name: "Practice Test",
-    icon: <FitnessCenterIcon />,
+    icon: FitnessCenterIcon,
     iconColor: "Error",
     component: PracticeTest,
     layout: "/duolingo",
@@ -45,7 +48,7 @@ const routes = [
   {
     path: "/my_results",
     name: "My Result",
-    icon: <SlideshowOutlinedIcon />,
+    icon: SlideshowOutlinedIcon,
     iconColor: "Error",
     component: Result,
     layout: "/duolingo",
@@ -54,18 +57,37 @@ const routes = [
   {
     path: "/accepting_institute",
     name: "Universities",
-    icon: <MapsHomeWorkOutlinedIcon />,
+    icon: MapsHomeWorkOutlinedIcon,
     iconColor: "Error",
-    component: AcceptingInstitute,
+    component: UniversitiesFav,
     layout: "/duolingo",
     isMenuItem: true,
   },
   {
     path: "/favorite",
     name: "FAQ",
-    icon: <StarsOutlinedIcon />,
+    icon: StarsOutlinedIcon,
     iconColor: "Error",
     component: Faq,
+    layout: "/duolingo",
+    isMenuItem: true,
+  },
+  {
+    path: "",
+    name: "",
+    icon: "",
+    iconColor: "Error",
+    component: "",
+    layout: "/duolingo",
+    isMenuItem: true,
+    divider: true,
+  },
+  {
+    path: "/checkout/select",
+    name: "PURCHASE A TEST",
+    icon: ShoppingCartOutlinedIcon,
+    iconColor: "Error",
+    component: SelectTest,
     layout: "/duolingo",
     isMenuItem: true,
   },

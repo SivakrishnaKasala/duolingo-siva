@@ -21,7 +21,7 @@ const CheckHeader = ({ selectType, backPage }) => {
   const [backToHome, setBackToHome] = useState(false);
   const theme = useTheme();
   const navigate = useNavigate();
-  console.log(navigate);
+  // console.log(navigate);
   const isBelow440 = useMediaQuery(theme.breakpoints.down(440));
   return (
     <>

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import CheckHeader from "../../../component/duoheader/CheckHeader";
 
+import SearchIcon from "@mui/icons-material/Search";
+
 import {
   Autocomplete,
   Box,
@@ -20,6 +22,11 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+
+const iconStyle = {
+  color: "#555",
+  cursor: "pointer",
+};
 
 const DeliveryTest = () => {
   const [backToSelect, setBackToSelect] = useState(false);
@@ -46,6 +53,8 @@ const DeliveryTest = () => {
       price: "98.00",
     },
   ];
+
+  const options = ["Apple", "Banana", "Cherry", "Date", "Fig"];
   const [priceValue, setPriceValue] = useState(optionsData[1].option);
   console.log(priceValue);
 
